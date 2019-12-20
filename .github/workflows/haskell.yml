@@ -17,6 +17,7 @@ jobs:
       run: |
         sudo apt-get install libblas-dev
         sudo apt-get install liblapacke-dev
+        sudo apt-get install libgsl-dev
         cabal update
         cabal install --only-dependencies
     - name: Build
