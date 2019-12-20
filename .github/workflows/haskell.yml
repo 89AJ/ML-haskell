@@ -15,10 +15,10 @@ jobs:
         cabal-version: '3.0'
     - name: Install dependencies
       run: |
-        apt-get install libblas-dev
-        apt-get install libblas-doc
-        apt-get install liblapacke-dev 
-        apt-get install liblapack-doc
+        sudo apt-get install libblas-dev
+        sudo apt-get install libblas-doc
+        sudo apt-get install liblapacke-dev 
+        sudo apt-get install liblapack-doc
         cabal update
         cabal install --only-dependencies
     - name: Build
